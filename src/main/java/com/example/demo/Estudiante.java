@@ -8,7 +8,7 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class Estudiante {
+class Estudiante {
 
     private @Id @GeneratedValue Long id;
     private String nombre;
@@ -16,7 +16,7 @@ public class Estudiante {
 
     Estudiante(){ }
 
-    public Estudiante(String nombre, int numeroCelular) {
+    Estudiante(String nombre, int numeroCelular) {
         this.nombre = nombre;
         this.numeroCelular = numeroCelular;
     }
